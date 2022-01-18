@@ -4,5 +4,5 @@
 	"BuildName":"App_Ver4",
  	"FileName":"WebApplication",
  	"Branch":"main",
- 	"BuildType":"dotnet"
+ 	"BuildType":"dotnet_Build"
  }

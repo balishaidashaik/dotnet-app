@@ -1,0 +1,8 @@
+{	"ApplicationType":"Dotnet",
+	"ApplicationName":"dotnet_cc1234",
+ 	"BuildTool":"msbuild",
+	"BuildName":"App_Ver4",
+ 	"FileName":"WebApplication",
+ 	"Branch":"master",
+ 	"BuildType":"dotnet"
+ }

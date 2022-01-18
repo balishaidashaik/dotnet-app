@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11 
+  pre_build:
+    commands:
+      - dotnet tool install --global dotnet-sonarscanner
+      - dotnet restore WebApplication.sln
+  build:
+    commands:
+      - SonarScanner.MSBuild.exe begin /k:"dotnet_linux" /d:sonar.host.url="http://3.21.88.185:9000" /d:sonar.login="2d76b490335034f1efa19fd09753be7f2f17d177"
+      - dotnet build WebApplication.sln
+      - SonarScanner.MSBuild.exe end /d:sonar.login="2d76b490335034f1efa19fd09753be7f2f17d177"
+  post_build:
+    commands:
+     #- dotnet sonarqube -Dsonar.projectKey=Dotnet -Dsonar.host.url=http://3.21.88.185:9000  -Dsonar.login=2d76b490335034f1efa19fd09753be7f2f17d177
+artifacts:
+  files:
+    - WebApplication/*

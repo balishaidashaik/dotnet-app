@@ -1,4 +1,4 @@
-{	"ApplicationType":"Dotnet",
+{	"ApplicationType":"dotnet",
 	"ApplicationName":"dotnet_cc1247",
  	"BuildTool":"msbuild",
 	"BuildName":"App_Ver4",

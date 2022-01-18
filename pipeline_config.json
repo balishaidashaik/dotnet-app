@@ -1,5 +1,5 @@
 {	"ApplicationType":"dotnet_build",
-	"ApplicationName":"dotnet_cc1247",
+	"ApplicationName":"dotnet_cc1248",
  	"BuildTool":"msbuild",
 	"BuildName":"App_Ver4",
  	"FileName":"WebApplication",
